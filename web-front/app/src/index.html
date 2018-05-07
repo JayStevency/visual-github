@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href = "vendor/bootstrap/bootstrap.min.css" rel = "stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <link href = "vendor/font-awesome/css/font-awesome.min.css" rel = "stylesheet">
+
+    <!-- c3 CSS-->
+    <link href="vendor/c3/c3.min.css" rel = "stylesheet">
+
+    <link href="app.min.css" rel="stylesheet">
+
+    <script src = "vendor/angular/angular.min.js"></script>
+
+    <script src = "vendor/angular/angular-route.min.js"></script>
+
+    <script src ="vendor/d3/d3.min.js"></script>
+    <script src = "vendor/c3/c3.min.js"></script>
+
+    <!--
+    <script src = "vendor/underscore/underscore-min.js"></script>
+    <script src = "vendor/c3-angular/c3-angular.min.js"></script>
+    -->
+    <script src = "vendor/jquery/jquery.min.js"></script>
+    <script src = "vendor/bootstrap/bootstrap.min.js"></script>
+
+    <script src = "app.js"></script>
+
+    <title>Visual Github</title>
+</head>
+<body ng-app="myApp" ng-controller="appCtrl">
+<nav class="navbar navbar">
+    <div class="container-fluid" >
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://github.com/"><i class="fa fa-github-alt icon-8x" aria-hidden="true"></i></a>
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input ng-model="searchForm.Id" id = "search-bar" type="text" class="form-control" placeholder="Github ID">
+            </div>
+            <button ng-click="submitTheForm(searchForm.Id)" class="btn btn-default"><a href="/search"></a>Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2">
+            <img class="img-rounded" style="width: 206px;height: 206px;" ng-src={{avatar_url}}>
+            <div class="caption">
+                <h3>{{GitHubID}}</h3>
+            </div>
+
+        </div>
+
+        <div class="col-sm-6">
+            <div class="text-right">
+
+                <div id="chart"></div>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div id="pie"></div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-4 sidenav">
+            <ng-view></ng-view>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+    <p>Copyright jay.</p>
+</footer>
+
+
+</body>
+</html>

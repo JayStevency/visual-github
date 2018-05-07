@@ -1,0 +1,35 @@
+{
+  "name": "webfront",
+  "version": "0.0.1",
+  "description": "Front for MRP",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "mrp"
+  ],
+  "author": "jay",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.11",
+    "angular-route": "^1.5.11",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "c3": "^0.4.7",
+    "d3": "^3.5.17",
+    "font-awesome": "^4.7.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-header": "^1.8.8",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "^2.1.2",
+    "jquery": "^3.2.1"
+  }
+}

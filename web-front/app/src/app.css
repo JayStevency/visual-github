@@ -1,0 +1,21 @@
+.badge-primary{
+    background-color: #286090;
+}
+.badge-primary:hover{
+    background-color: #387095;
+}
+
+.badge-success{
+    background-color: #449d44;
+}
+
+.badge-success:hover{
+    background-color: #54ad54;
+}
+
+.badge-info{
+    background-color: #EC971F;
+}
+.badge-info:hover{
+    background-color: #FCA72F;
+}

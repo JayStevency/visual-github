@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 8301
+
+zuul:
+  #Service will be mapped under the /api URI
+  prefix: /api
+  routes:
+    search:
+      path: /search/**
+      serviceId: search
+    github:
+      path: /github/**
+      serviceId: github
+    mapreduce:
+      path: /mapreduce/**
+      serviceId: mapreduce
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8300/eureka/
+    registerWithEureka: false
+
+
+ribbon:
+  eureka:
+    enabled: true
