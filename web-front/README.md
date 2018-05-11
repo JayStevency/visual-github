@@ -1,40 +1,37 @@
 # WebFront
 
-GitHub 데이터를 시각화 하고 클라이언트 요청을 처리하기 위해 인터페이스를 제공
+To visualize Github Repo data
 
 ## Front-End Architecture
 
 ![Front](https://github.com/JayStevency/JayStevency/blob/master/PortfolioProject1/Front.png)
 
 
-### Front 주요 모듈 :
+### Libraries:
 
-#### Angular
+#### angular.js
 
-> HTTP 요청 및 데이터 바인딩 
+> HTTP Request & Response binding 
  
-#### C3
+#### c3.js
 
-> GitHub 데이터 차트로 시각화
+> draw charts
 
 ### Gulp
 
-> 웹 프로젝트 빌드 및 Serve
+> project build and run
 
-## How to run Front?
+## How to run?
 
-### 요구사항 :
+### requirement :
 
-- NPM : 3.9.3 
+- npm : 3.9.3 
 
-### 실행 방법
+### run: 
 
-1. 빌드 방법
-    
- >**package.json** 있는 경로에서 ```npm install``` 
+> `npm install`
 
-2. 빌드 후 run
+> `gulp run`
 
- > **gulpfile.js** 있는 경로에서  ```gulp run```
  
 
