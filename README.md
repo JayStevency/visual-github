@@ -28,10 +28,10 @@ This project is to visualize data from github's user repository data
 
 #### Based spring-boot
 
-> `cd ${directory_name}`
->> `./mvnw clean`
->> `./mvnw install`
->> `java -jar target/${directory_name}-0.0.1-SNAPSHOT.jar`
+> `cd ${directory_name}`<br>
+>> `./mvnw clean` <br>
+>> `./mvnw install`<br>
+>> `java -jar target/${directory_name}-0.0.1-SNAPSHOT.jar`<br>
 
 > or
 

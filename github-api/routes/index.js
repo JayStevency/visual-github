@@ -9,10 +9,6 @@ router.get('/health.json', (req, res) => {
     });
 });
 
-router.get('/a', (req, res) => {
-    res.send("From Node Server");
-})
-
 router.get('/github/:githubId', (req, res) => {
     const {githubId} = req.params;
     const options = {

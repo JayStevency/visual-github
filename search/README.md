@@ -10,8 +10,6 @@ Search
 
 > or
 
->`./mvnw clean`
-
->`./mvnw install`
-
+>`./mvnw clean`<br>
+>`./mvnw install`<br>
 >`java -jar target/search-0.0.1-SNAPSHOT.jar`

@@ -29,8 +29,7 @@ To visualize Github Repo data
 
 ### run: 
 
-> `npm install`
-
+> `npm install`<br>
 > `gulp run`
 
  

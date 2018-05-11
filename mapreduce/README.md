@@ -6,14 +6,12 @@ Map Reduce
 
 ### localhost
 
-> `./mvnw spring-boot:run`
+> `./mvnw spring-boot:run`<br>
 
 > or
 
->`./mvnw clean`
-
->`./mvnw install`
-
+>`./mvnw clean`<br>
+>`./mvnw install`<br>
 >`java -jar target/mapreduce-0.0.1-SNAPSHOT.jar`
 
 ### How to implement MapReduce
