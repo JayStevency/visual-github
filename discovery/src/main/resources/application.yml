@@ -11,3 +11,9 @@ eureka:
     fetchRegistry: false
     server:
       waitTimeInMsWhenSyncEmpty: 0
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 20
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
