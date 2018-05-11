@@ -92,13 +92,12 @@ var myApp = angular.module('myApp',['ngRoute'])
             })
     })
     .controller('appCtrl', function($scope,$http,$location) {
-        $scope.submitTheForm = function(id) {
-            console.log(id);
+        $scope.submitTheForm = function(githubId) {
+            console.log(githubId);
             $location.path('/repoList');
             $http({
-                url: 'http://localhost:8301/api/search',
+                url: 'http://localhost:8301/api/search/' + githubId,
                 method: "GET",
-                params : {search : id}
             }).then(function successCallback(response) {
                 // this callback will be called asynchronously
                 // when the response is available
