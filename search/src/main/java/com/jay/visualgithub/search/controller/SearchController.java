@@ -18,12 +18,9 @@ public class SearchController {
     RestTemplate restTemplate;
 
     @RequestMapping("/{githubId}")
-    public List<Object> searchGithubInfo(@PathVariable("githubId") String githubId){
-        ResponseEntity<List<Object>> responseEntity = restTemplate.exchange("http://github/" + githubId, HttpMethod.GET, null,
-                new ParameterizedTypeReference<List<Object>>() {});
-
-        List<Object> repoData = responseEntity.getBody();
-
-        return repoData;
+    public Object[] searchGithubInfo(@PathVariable("githubId") String githubId){
+        ResponseEntity<Object[]> responseEntity = restTemplate.getForEntity("http://mapreduce/" + githubId, Object[].class);
+//        ResponseEntity<Object[]> responseEntity = restTemplate.getForEntity("http://sidecar/github/" + githubId, Object[].class);
+        return responseEntity.getBody();
     }
 }
