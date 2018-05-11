@@ -1,6 +1,6 @@
 spring:
   application:
-    name: github
+    name: mapreduce
 
 server:
   port: 8304
@@ -13,3 +13,9 @@ eureka:
       defaultZone: http://localhost:8300/eureka/
   instance:
     hostname: localhost
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 20
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
