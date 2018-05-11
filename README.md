@@ -19,8 +19,8 @@ This project is to visualize data from github's user repository data
 
 ### Web-front
 
-> `cd web-front`
-> `npm install`
+> `cd web-front`<br>
+> `npm install`<br>
 > `gulp run`
 
 
