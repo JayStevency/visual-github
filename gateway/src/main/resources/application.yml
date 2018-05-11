@@ -12,12 +12,12 @@ zuul:
     search:
       path: /search/**
       serviceId: search
-    github:
-      path: /github/**
-      serviceId: github
     mapreduce:
       path: /mapreduce/**
       serviceId: mapreduce
+    sidecar:
+      path: /sidecar/**
+      serviceId: sidecar
 
 eureka:
   client:
@@ -25,7 +25,8 @@ eureka:
       defaultZone: http://localhost:8300/eureka/
     registerWithEureka: false
 
-
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 20
 ribbon:
-  eureka:
-    enabled: true
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
